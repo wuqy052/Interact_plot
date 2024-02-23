@@ -4,7 +4,7 @@ import plotly.express as px
 
 st.title("Interact with Gapminder Data")
 
-df = pd.read_csv("Data/gapminder_tidy.csv")
+df = pd.read_csv("gapminder_tidy.csv")
 metric_labels = {'gdpPercap' : 'GDP Per Capita', 'lifeExp': 'Average Life Expectancy', 'pop': 'Population'}
 continent_list = list(df['continent'].unique())
 metric_list = list(df['metric'].unique())
